@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ProfileEditorView" customModule="FirabaseAppMVP" customModuleProvider="target">
+            <connections>
+                <outlet property="btnSaveProfile" destination="Cgf-oh-e8e" id="jM2-sb-vdC"/>
+                <outlet property="tfUserName" destination="2wI-LK-gWJ" id="4hO-ku-LfU"/>
+                <outlet property="userPhoto" destination="tgl-uk-EHb" id="Nu6-cs-NBc"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar_selector" translatesAutoresizingMaskIntoConstraints="NO" id="tgl-uk-EHb">
+                    <rect key="frame" x="132" y="94" width="150" height="150"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="150" id="Rvr-1O-MDh"/>
+                        <constraint firstAttribute="width" constant="150" id="ueC-Ih-rL0"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="75"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </imageView>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2wI-LK-gWJ">
+                    <rect key="frame" x="10" y="334" width="394" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="ILD-if-Ae9"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4kb-Dd-b8j">
+                    <rect key="frame" x="132" y="94" width="150" height="150"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="150" id="Jla-hW-fUv"/>
+                        <constraint firstAttribute="height" constant="150" id="nZB-ao-mJH"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                            <integer key="value" value="75"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="imagePickerTapped:" destination="-1" eventType="touchUpInside" id="vZo-e8-jvN"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cgf-oh-e8e">
+                    <rect key="frame" x="30" y="812" width="354" height="40"/>
+                    <color key="backgroundColor" systemColor="systemYellowColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="jH4-lS-Z9k"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="20"/>
+                    <state key="normal" title="Save profile">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <state key="disabled">
+                        <color key="titleColor" systemColor="systemGrayColor"/>
+                        <color key="titleShadowColor" systemColor="labelColor"/>
+                    </state>
+                    <connections>
+                        <action selector="saveProfileTapped:" destination="-1" eventType="touchUpInside" id="yPW-87-hQj"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="2wI-LK-gWJ" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="0z7-md-mae"/>
+                <constraint firstItem="tgl-uk-EHb" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="50" id="3Jd-uo-LAy"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="2wI-LK-gWJ" secondAttribute="trailing" constant="10" id="5Qu-Z1-BH3"/>
+                <constraint firstItem="tgl-uk-EHb" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="HjU-Pm-QSn"/>
+                <constraint firstItem="4kb-Dd-b8j" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Nnf-NM-1Kz"/>
+                <constraint firstItem="2wI-LK-gWJ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="gCE-E5-TpC"/>
+                <constraint firstItem="2wI-LK-gWJ" firstAttribute="top" secondItem="tgl-uk-EHb" secondAttribute="bottom" constant="90" id="iIK-Ig-1e0"/>
+                <constraint firstItem="4kb-Dd-b8j" firstAttribute="centerY" secondItem="tgl-uk-EHb" secondAttribute="centerY" id="l5T-PD-qam"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Cgf-oh-e8e" secondAttribute="trailing" constant="30" id="qoY-uY-7sr"/>
+                <constraint firstItem="Cgf-oh-e8e" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" constant="-10" id="sb0-HA-3Nx"/>
+                <constraint firstItem="Cgf-oh-e8e" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="30" id="xye-kJ-ruc"/>
+            </constraints>
+            <point key="canvasLocation" x="97" y="71"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="avatar_selector" width="100" height="100"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,812 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		30170EBB26A0302C0030C997 /* RouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30170EBA26A0302C0030C997 /* RouterProtocol.swift */; };
+		30170EC626A090D30030C997 /* ProfileEditorPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30170EC526A090D30030C997 /* ProfileEditorPresenter.swift */; };
+		30170ECE26A096860030C997 /* ProfileEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30170ECC26A096860030C997 /* ProfileEditorView.swift */; };
+		30170ECF26A096860030C997 /* ProfileEditorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 30170ECD26A096860030C997 /* ProfileEditorView.xib */; };
+		30977745269C55AC00C9C9E5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30977744269C55AC00C9C9E5 /* AppDelegate.swift */; };
+		30977747269C55AC00C9C9E5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30977746269C55AC00C9C9E5 /* SceneDelegate.swift */; };
+		3097774C269C55AC00C9C9E5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3097774A269C55AC00C9C9E5 /* Main.storyboard */; };
+		3097774E269C55AF00C9C9E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3097774D269C55AF00C9C9E5 /* Assets.xcassets */; };
+		30977751269C55AF00C9C9E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3097774F269C55AF00C9C9E5 /* LaunchScreen.storyboard */; };
+		30977775269C5AD300C9C9E5 /* PhoneVerifyViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30977774269C5AD300C9C9E5 /* PhoneVerifyViewPresenter.swift */; };
+		30E89EAE26A1C12C00A77966 /* UserLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E89EAD26A1C12C00A77966 /* UserLayer.swift */; };
+		30FEA249269DD73700C939BA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 30FEA248269DD73700C939BA /* GoogleService-Info.plist */; };
+		30FEA24D269DDA9C00C939BA /* AuthLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30FEA24C269DDA9C00C939BA /* AuthLayer.swift */; };
+		30FEA250269DDBD200C939BA /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30FEA24F269DDBD200C939BA /* User.swift */; };
+		30FEA254269DE61900C939BA /* VerifyPhoneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30FEA252269DE61900C939BA /* VerifyPhoneView.swift */; };
+		30FEA255269DE61900C939BA /* VerifyPhoneView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 30FEA253269DE61900C939BA /* VerifyPhoneView.xib */; };
+		30FEA257269EEA2C00C939BA /* AssemblyBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30FEA256269EEA2B00C939BA /* AssemblyBuilder.swift */; };
+		30FEA25B269EEBC500C939BA /* AlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30FEA25A269EEBC500C939BA /* AlertController.swift */; };
+		30FEA25F269EF85800C939BA /* VerifyCodePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30FEA25E269EF85800C939BA /* VerifyCodePresenter.swift */; };
+		30FEA266269F026600C939BA /* VerifyCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30FEA264269F026600C939BA /* VerifyCodeView.swift */; };
+		30FEA267269F026600C939BA /* VerifyCodeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 30FEA265269F026600C939BA /* VerifyCodeView.xib */; };
+		76F90581091AD86D1256D3F4 /* Pods_FirabaseAppMVP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BE76EE16441A0FA927E1669 /* Pods_FirabaseAppMVP.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		30977758269C55B000C9C9E5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 30977739269C55AC00C9C9E5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 30977740269C55AC00C9C9E5;
+			remoteInfo = FirabaseAppMVP;
+		};
+		30977763269C55B000C9C9E5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 30977739269C55AC00C9C9E5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 30977740269C55AC00C9C9E5;
+			remoteInfo = FirabaseAppMVP;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1BE76EE16441A0FA927E1669 /* Pods_FirabaseAppMVP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FirabaseAppMVP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		235FA847268E020E38174255 /* Pods-FirabaseAppMVP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirabaseAppMVP.release.xcconfig"; path = "Target Support Files/Pods-FirabaseAppMVP/Pods-FirabaseAppMVP.release.xcconfig"; sourceTree = "<group>"; };
+		30170EBA26A0302C0030C997 /* RouterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterProtocol.swift; sourceTree = "<group>"; };
+		30170EC526A090D30030C997 /* ProfileEditorPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEditorPresenter.swift; sourceTree = "<group>"; };
+		30170ECC26A096860030C997 /* ProfileEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEditorView.swift; sourceTree = "<group>"; };
+		30170ECD26A096860030C997 /* ProfileEditorView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileEditorView.xib; sourceTree = "<group>"; };
+		30977741269C55AC00C9C9E5 /* FirabaseAppMVP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirabaseAppMVP.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		30977744269C55AC00C9C9E5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		30977746269C55AC00C9C9E5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		3097774B269C55AC00C9C9E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3097774D269C55AF00C9C9E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		30977750269C55AF00C9C9E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		30977752269C55AF00C9C9E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		30977757269C55B000C9C9E5 /* FirabaseAppMVPTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FirabaseAppMVPTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		30977762269C55B000C9C9E5 /* FirabaseAppMVPUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FirabaseAppMVPUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		30977774269C5AD300C9C9E5 /* PhoneVerifyViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneVerifyViewPresenter.swift; sourceTree = "<group>"; };
+		30E89EAD26A1C12C00A77966 /* UserLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLayer.swift; sourceTree = "<group>"; };
+		30FEA248269DD73700C939BA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		30FEA24C269DDA9C00C939BA /* AuthLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthLayer.swift; sourceTree = "<group>"; };
+		30FEA24F269DDBD200C939BA /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		30FEA252269DE61900C939BA /* VerifyPhoneView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyPhoneView.swift; sourceTree = "<group>"; };
+		30FEA253269DE61900C939BA /* VerifyPhoneView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VerifyPhoneView.xib; sourceTree = "<group>"; };
+		30FEA256269EEA2B00C939BA /* AssemblyBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssemblyBuilder.swift; sourceTree = "<group>"; };
+		30FEA25A269EEBC500C939BA /* AlertController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertController.swift; sourceTree = "<group>"; };
+		30FEA25E269EF85800C939BA /* VerifyCodePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyCodePresenter.swift; sourceTree = "<group>"; };
+		30FEA264269F026600C939BA /* VerifyCodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerifyCodeView.swift; sourceTree = "<group>"; };
+		30FEA265269F026600C939BA /* VerifyCodeView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VerifyCodeView.xib; sourceTree = "<group>"; };
+		4ECDE8C96680CCC550BFFF45 /* Pods-FirabaseAppMVP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirabaseAppMVP.debug.xcconfig"; path = "Target Support Files/Pods-FirabaseAppMVP/Pods-FirabaseAppMVP.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3097773E269C55AC00C9C9E5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76F90581091AD86D1256D3F4 /* Pods_FirabaseAppMVP.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30977754269C55B000C9C9E5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3097775F269C55B000C9C9E5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		30170EC726A096330030C997 /* ProfileEditorModule */ = {
+			isa = PBXGroup;
+			children = (
+				30170ECB26A0966D0030C997 /* View */,
+				30170EC826A096490030C997 /* Presenter */,
+			);
+			path = ProfileEditorModule;
+			sourceTree = "<group>";
+		};
+		30170EC826A096490030C997 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				30170EC526A090D30030C997 /* ProfileEditorPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		30170ECB26A0966D0030C997 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				30170ECC26A096860030C997 /* ProfileEditorView.swift */,
+				30170ECD26A096860030C997 /* ProfileEditorView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		30977738269C55AC00C9C9E5 = {
+			isa = PBXGroup;
+			children = (
+				30977743269C55AC00C9C9E5 /* FirabaseAppMVP */,
+				30977742269C55AC00C9C9E5 /* Products */,
+				F0661E10809E6471DEFA5F08 /* Pods */,
+				45A84F4D194572F98DD20751 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		30977742269C55AC00C9C9E5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				30977741269C55AC00C9C9E5 /* FirabaseAppMVP.app */,
+				30977757269C55B000C9C9E5 /* FirabaseAppMVPTests.xctest */,
+				30977762269C55B000C9C9E5 /* FirabaseAppMVPUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		30977743269C55AC00C9C9E5 /* FirabaseAppMVP */ = {
+			isa = PBXGroup;
+			children = (
+				30977744269C55AC00C9C9E5 /* AppDelegate.swift */,
+				30977746269C55AC00C9C9E5 /* SceneDelegate.swift */,
+				3097774A269C55AC00C9C9E5 /* Main.storyboard */,
+				30170EBA26A0302C0030C997 /* RouterProtocol.swift */,
+				30FEA24E269DDB1300C939BA /* Model */,
+				30FEA258269EEB9300C939BA /* Helper */,
+				30FEA262269F022E00C939BA /* CheckCodeModule */,
+				30170EC726A096330030C997 /* ProfileEditorModule */,
+				30FEA24B269DD88200C939BA /* CheckPhoneModule */,
+				3097774D269C55AF00C9C9E5 /* Assets.xcassets */,
+				3097774F269C55AF00C9C9E5 /* LaunchScreen.storyboard */,
+				30FEA248269DD73700C939BA /* GoogleService-Info.plist */,
+				30977752269C55AF00C9C9E5 /* Info.plist */,
+			);
+			path = FirabaseAppMVP;
+			sourceTree = "<group>";
+		};
+		30FEA24A269DD87100C939BA /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				30977774269C5AD300C9C9E5 /* PhoneVerifyViewPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		30FEA24B269DD88200C939BA /* CheckPhoneModule */ = {
+			isa = PBXGroup;
+			children = (
+				30FEA251269DE5E200C939BA /* View */,
+				30FEA24A269DD87100C939BA /* Presenter */,
+			);
+			path = CheckPhoneModule;
+			sourceTree = "<group>";
+		};
+		30FEA24E269DDB1300C939BA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				30FEA24F269DDBD200C939BA /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		30FEA251269DE5E200C939BA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				30FEA252269DE61900C939BA /* VerifyPhoneView.swift */,
+				30FEA253269DE61900C939BA /* VerifyPhoneView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		30FEA258269EEB9300C939BA /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				30FEA25D269EF80900C939BA /* ModuleBuilder */,
+				30FEA259269EEBA900C939BA /* Network */,
+				30FEA25C269EF7B500C939BA /* Alert */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		30FEA259269EEBA900C939BA /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				30FEA24C269DDA9C00C939BA /* AuthLayer.swift */,
+				30E89EAD26A1C12C00A77966 /* UserLayer.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		30FEA25C269EF7B500C939BA /* Alert */ = {
+			isa = PBXGroup;
+			children = (
+				30FEA25A269EEBC500C939BA /* AlertController.swift */,
+			);
+			path = Alert;
+			sourceTree = "<group>";
+		};
+		30FEA25D269EF80900C939BA /* ModuleBuilder */ = {
+			isa = PBXGroup;
+			children = (
+				30FEA256269EEA2B00C939BA /* AssemblyBuilder.swift */,
+			);
+			path = ModuleBuilder;
+			sourceTree = "<group>";
+		};
+		30FEA262269F022E00C939BA /* CheckCodeModule */ = {
+			isa = PBXGroup;
+			children = (
+				30FEA268269F026B00C939BA /* View */,
+				30FEA263269F024000C939BA /* Presenter */,
+			);
+			path = CheckCodeModule;
+			sourceTree = "<group>";
+		};
+		30FEA263269F024000C939BA /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				30FEA25E269EF85800C939BA /* VerifyCodePresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		30FEA268269F026B00C939BA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				30FEA264269F026600C939BA /* VerifyCodeView.swift */,
+				30FEA265269F026600C939BA /* VerifyCodeView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		45A84F4D194572F98DD20751 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1BE76EE16441A0FA927E1669 /* Pods_FirabaseAppMVP.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F0661E10809E6471DEFA5F08 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4ECDE8C96680CCC550BFFF45 /* Pods-FirabaseAppMVP.debug.xcconfig */,
+				235FA847268E020E38174255 /* Pods-FirabaseAppMVP.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		30977740269C55AC00C9C9E5 /* FirabaseAppMVP */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3097776B269C55B100C9C9E5 /* Build configuration list for PBXNativeTarget "FirabaseAppMVP" */;
+			buildPhases = (
+				9DC3440CBBBBD9E55EB29D37 /* [CP] Check Pods Manifest.lock */,
+				3097773D269C55AC00C9C9E5 /* Sources */,
+				3097773E269C55AC00C9C9E5 /* Frameworks */,
+				3097773F269C55AC00C9C9E5 /* Resources */,
+				CBE5263B6222BC59BE5003B0 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FirabaseAppMVP;
+			productName = FirabaseAppMVP;
+			productReference = 30977741269C55AC00C9C9E5 /* FirabaseAppMVP.app */;
+			productType = "com.apple.product-type.application";
+		};
+		30977756269C55B000C9C9E5 /* FirabaseAppMVPTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3097776E269C55B100C9C9E5 /* Build configuration list for PBXNativeTarget "FirabaseAppMVPTests" */;
+			buildPhases = (
+				30977753269C55B000C9C9E5 /* Sources */,
+				30977754269C55B000C9C9E5 /* Frameworks */,
+				30977755269C55B000C9C9E5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				30977759269C55B000C9C9E5 /* PBXTargetDependency */,
+			);
+			name = FirabaseAppMVPTests;
+			productName = FirabaseAppMVPTests;
+			productReference = 30977757269C55B000C9C9E5 /* FirabaseAppMVPTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		30977761269C55B000C9C9E5 /* FirabaseAppMVPUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 30977771269C55B100C9C9E5 /* Build configuration list for PBXNativeTarget "FirabaseAppMVPUITests" */;
+			buildPhases = (
+				3097775E269C55B000C9C9E5 /* Sources */,
+				3097775F269C55B000C9C9E5 /* Frameworks */,
+				30977760269C55B000C9C9E5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				30977764269C55B000C9C9E5 /* PBXTargetDependency */,
+			);
+			name = FirabaseAppMVPUITests;
+			productName = FirabaseAppMVPUITests;
+			productReference = 30977762269C55B000C9C9E5 /* FirabaseAppMVPUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		30977739269C55AC00C9C9E5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					30977740269C55AC00C9C9E5 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					30977756269C55B000C9C9E5 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = 30977740269C55AC00C9C9E5;
+					};
+					30977761269C55B000C9C9E5 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = 30977740269C55AC00C9C9E5;
+					};
+				};
+			};
+			buildConfigurationList = 3097773C269C55AC00C9C9E5 /* Build configuration list for PBXProject "FirabaseAppMVP" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 30977738269C55AC00C9C9E5;
+			productRefGroup = 30977742269C55AC00C9C9E5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				30977740269C55AC00C9C9E5 /* FirabaseAppMVP */,
+				30977756269C55B000C9C9E5 /* FirabaseAppMVPTests */,
+				30977761269C55B000C9C9E5 /* FirabaseAppMVPUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3097773F269C55AC00C9C9E5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30FEA255269DE61900C939BA /* VerifyPhoneView.xib in Resources */,
+				30977751269C55AF00C9C9E5 /* LaunchScreen.storyboard in Resources */,
+				30FEA267269F026600C939BA /* VerifyCodeView.xib in Resources */,
+				30FEA249269DD73700C939BA /* GoogleService-Info.plist in Resources */,
+				3097774E269C55AF00C9C9E5 /* Assets.xcassets in Resources */,
+				30170ECF26A096860030C997 /* ProfileEditorView.xib in Resources */,
+				3097774C269C55AC00C9C9E5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30977755269C55B000C9C9E5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30977760269C55B000C9C9E5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9DC3440CBBBBD9E55EB29D37 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FirabaseAppMVP-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CBE5263B6222BC59BE5003B0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FirabaseAppMVP/Pods-FirabaseAppMVP-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FirabaseAppMVP/Pods-FirabaseAppMVP-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FirabaseAppMVP/Pods-FirabaseAppMVP-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3097773D269C55AC00C9C9E5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30FEA254269DE61900C939BA /* VerifyPhoneView.swift in Sources */,
+				30977745269C55AC00C9C9E5 /* AppDelegate.swift in Sources */,
+				30FEA24D269DDA9C00C939BA /* AuthLayer.swift in Sources */,
+				30170EC626A090D30030C997 /* ProfileEditorPresenter.swift in Sources */,
+				30170ECE26A096860030C997 /* ProfileEditorView.swift in Sources */,
+				30977775269C5AD300C9C9E5 /* PhoneVerifyViewPresenter.swift in Sources */,
+				30E89EAE26A1C12C00A77966 /* UserLayer.swift in Sources */,
+				30FEA25B269EEBC500C939BA /* AlertController.swift in Sources */,
+				30FEA257269EEA2C00C939BA /* AssemblyBuilder.swift in Sources */,
+				30FEA266269F026600C939BA /* VerifyCodeView.swift in Sources */,
+				30FEA250269DDBD200C939BA /* User.swift in Sources */,
+				30FEA25F269EF85800C939BA /* VerifyCodePresenter.swift in Sources */,
+				30977747269C55AC00C9C9E5 /* SceneDelegate.swift in Sources */,
+				30170EBB26A0302C0030C997 /* RouterProtocol.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30977753269C55B000C9C9E5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3097775E269C55B000C9C9E5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		30977759269C55B000C9C9E5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 30977740269C55AC00C9C9E5 /* FirabaseAppMVP */;
+			targetProxy = 30977758269C55B000C9C9E5 /* PBXContainerItemProxy */;
+		};
+		30977764269C55B000C9C9E5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 30977740269C55AC00C9C9E5 /* FirabaseAppMVP */;
+			targetProxy = 30977763269C55B000C9C9E5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3097774A269C55AC00C9C9E5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3097774B269C55AC00C9C9E5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3097774F269C55AF00C9C9E5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				30977750269C55AF00C9C9E5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		30977769269C55B100C9C9E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3097776A269C55B100C9C9E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3097776C269C55B100C9C9E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4ECDE8C96680CCC550BFFF45 /* Pods-FirabaseAppMVP.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4UTH3CG74D;
+				INFOPLIST_FILE = FirabaseAppMVP/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.myTestApp.FirabaseAppMVP;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3097776D269C55B100C9C9E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 235FA847268E020E38174255 /* Pods-FirabaseAppMVP.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4UTH3CG74D;
+				INFOPLIST_FILE = FirabaseAppMVP/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.myTestApp.FirabaseAppMVP;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3097776F269C55B100C9C9E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4UTH3CG74D;
+				INFOPLIST_FILE = FirabaseAppMVPTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.myTestApp.FirabaseAppMVPTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FirabaseAppMVP.app/FirabaseAppMVP";
+			};
+			name = Debug;
+		};
+		30977770269C55B100C9C9E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4UTH3CG74D;
+				INFOPLIST_FILE = FirabaseAppMVPTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.myTestApp.FirabaseAppMVPTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FirabaseAppMVP.app/FirabaseAppMVP";
+			};
+			name = Release;
+		};
+		30977772269C55B100C9C9E5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4UTH3CG74D;
+				INFOPLIST_FILE = FirabaseAppMVPUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.myTestApp.FirabaseAppMVPUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FirabaseAppMVP;
+			};
+			name = Debug;
+		};
+		30977773269C55B100C9C9E5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4UTH3CG74D;
+				INFOPLIST_FILE = FirabaseAppMVPUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.myTestApp.FirabaseAppMVPUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FirabaseAppMVP;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3097773C269C55AC00C9C9E5 /* Build configuration list for PBXProject "FirabaseAppMVP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30977769269C55B100C9C9E5 /* Debug */,
+				3097776A269C55B100C9C9E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3097776B269C55B100C9C9E5 /* Build configuration list for PBXNativeTarget "FirabaseAppMVP" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3097776C269C55B100C9C9E5 /* Debug */,
+				3097776D269C55B100C9C9E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3097776E269C55B100C9C9E5 /* Build configuration list for PBXNativeTarget "FirabaseAppMVPTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3097776F269C55B100C9C9E5 /* Debug */,
+				30977770269C55B100C9C9E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		30977771269C55B100C9C9E5 /* Build configuration list for PBXNativeTarget "FirabaseAppMVPUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30977772269C55B100C9C9E5 /* Debug */,
+				30977773269C55B100C9C9E5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 30977739269C55AC00C9C9E5 /* Project object */;
+}

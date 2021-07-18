@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="VerifyCodeView" customModule="FirabaseAppMVP" customModuleProvider="target">
+            <connections>
+                <outlet property="tfCodeInput" destination="Pig-1P-SBb" id="CPm-3x-TT7"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="123456" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Pig-1P-SBb">
+                    <rect key="frame" x="20" y="244" width="374" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="74M-tm-47k"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done" textContentType="one-time-code"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7kS-bK-JX3">
+                    <rect key="frame" x="132" y="314" width="150" height="40"/>
+                    <color key="backgroundColor" systemColor="systemYellowColor"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="150" id="rtj-5V-arS"/>
+                        <constraint firstAttribute="height" constant="40" id="u1k-j9-Whe"/>
+                    </constraints>
+                    <state key="normal" title="Logg in">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="loggInBtnTapped:" destination="-1" eventType="touchUpInside" id="dck-v5-gSp"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="Pig-1P-SBb" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="5hA-as-hdV"/>
+                <constraint firstItem="7kS-bK-JX3" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="6xT-ln-CBo"/>
+                <constraint firstItem="7kS-bK-JX3" firstAttribute="top" secondItem="Pig-1P-SBb" secondAttribute="bottom" constant="30" id="FN3-JX-MXB"/>
+                <constraint firstItem="Pig-1P-SBb" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="200" id="V5S-5b-qOk"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Pig-1P-SBb" secondAttribute="trailing" constant="20" id="wUd-cL-kB1"/>
+            </constraints>
+            <point key="canvasLocation" x="97" y="69"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
