@@ -12,12 +12,11 @@ protocol AssemblyBuilderProtocol {
     func createVerifyPhoneModule(router: RouterProtocol) -> UIViewController
     func createVerifyCodeModule(router: RouterProtocol, authID: String) -> UIViewController
     func createProfileEditorModule(router: RouterProtocol, userData: AuthDataResult?) -> UIViewController
+    func createHomePage(router: RouterProtocol, id: String) -> UIViewController
 }
 
 class AssemblyBuilder: AssemblyBuilderProtocol {
-    
-    var userID = UserDefaults.standard.value(forKey: "userID") ?? ""
-    
+        
     func createVerifyPhoneModule(router: RouterProtocol) -> UIViewController {
         let view = VerifyPhoneView()
         let network = AuthLayer()
@@ -44,6 +43,16 @@ class AssemblyBuilder: AssemblyBuilderProtocol {
         let alertController = AlertController()
         let userLayer = UserLayer()
         let presenter = ProfileEditorPresenter(view: view, authLayer: network, router: router, userLayer: userLayer, phoneNumber: userData?.user.phoneNumber, userID: userData?.user.uid)
+        view.presenter = presenter
+        view.alert = alertController
+        return view
+    }
+    
+    func createHomePage(router: RouterProtocol, id: String) -> UIViewController {
+        let view = HomeView()
+        let alertController = AlertController()
+        let userLayer = UserLayer()
+        let presenter = HomeViewPresenter(userLayer: userLayer, router: router, view: view)
         view.presenter = presenter
         view.alert = alertController
         return view

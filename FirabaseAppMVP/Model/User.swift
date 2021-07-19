@@ -10,6 +10,6 @@ import UIKit
 struct User {
     var name: String
     let id: String
-    var number: String
-    var photo: UIImage
+    var phone: String
+    var photoURL: String
 }

@@ -9,13 +9,14 @@ import UIKit
 import Firebase
 
 protocol ProfileEditorViewProtocol: AnyObject {
-    func saveOnSecces(documentID: String)
+    func saveOnSecces()
     func saveOnFailure(error: Error)
 }
 
 protocol ProfileEditorPresenterProtocol: AnyObject {
     init(view: ProfileEditorViewProtocol, authLayer: AuthLayerProtocol, router: RouterProtocol, userLayer: UserLayerProtocol, phoneNumber: String?, userID: String?)
     func saveUserTapped(image: UIImage, userName: String)
+    func openHomePage()
 }
 
 class ProfileEditorPresenter: ProfileEditorPresenterProtocol {
@@ -38,21 +39,32 @@ class ProfileEditorPresenter: ProfileEditorPresenterProtocol {
     }
     
     func saveUserTapped(image: UIImage, userName: String) {
-        let user = User(name: userName, id: userID!, number: phoneNumber!, photo: image)
+        
+        userLayer?.savePhotoToFirStorage(image: image, id: userID!, comlition: { [self] result in
+            switch result {
+            case .success(let url):
+                let user = User(name: userName, id: userID!, phone: phoneNumber!, photoURL: url)
 
-        userLayer?.saveToFirebase(user: user, comlition: { result in
-            DispatchQueue.main.async {
-                switch result {
-                case .failure(let error):
-                    self.view?.saveOnFailure(error: error)
-                case .success(let docID):
-                    self.view?.saveOnSecces(documentID: docID)
-                }
+                self.userLayer?.saveToFirebase(user: user, comlition: { result in
+                    DispatchQueue.main.async {
+                        switch result {
+                        case .failure(let error):
+                            self.view?.saveOnFailure(error: error)
+                        case .success(_):
+                            self.view?.saveOnSecces()
+                        }
+                    }
+
+                })
+            case .failure(let error):
+                debugPrint(error.localizedDescription)
             }
-
         })
     }
     
+    func openHomePage() {
+        router?.openHomePage()
+    }
     
     
 }

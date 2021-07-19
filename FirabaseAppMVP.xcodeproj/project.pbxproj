@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		30170EBB26A0302C0030C997 /* RouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30170EBA26A0302C0030C997 /* RouterProtocol.swift */; };
+		30170EBB26A0302C0030C997 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30170EBA26A0302C0030C997 /* Router.swift */; };
 		30170EC626A090D30030C997 /* ProfileEditorPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30170EC526A090D30030C997 /* ProfileEditorPresenter.swift */; };
 		30170ECE26A096860030C997 /* ProfileEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30170ECC26A096860030C997 /* ProfileEditorView.swift */; };
 		30170ECF26A096860030C997 /* ProfileEditorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 30170ECD26A096860030C997 /* ProfileEditorView.xib */; };
@@ -17,6 +17,9 @@
 		3097774E269C55AF00C9C9E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3097774D269C55AF00C9C9E5 /* Assets.xcassets */; };
 		30977751269C55AF00C9C9E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3097774F269C55AF00C9C9E5 /* LaunchScreen.storyboard */; };
 		30977775269C5AD300C9C9E5 /* PhoneVerifyViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30977774269C5AD300C9C9E5 /* PhoneVerifyViewPresenter.swift */; };
+		30B2A99126A58EEE007E7C7B /* HomeViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B2A99026A58EEE007E7C7B /* HomeViewPresenter.swift */; };
+		30B2A99626A59084007E7C7B /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B2A99426A59084007E7C7B /* HomeView.swift */; };
+		30B2A99726A59084007E7C7B /* HomeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 30B2A99526A59084007E7C7B /* HomeView.xib */; };
 		30E89EAE26A1C12C00A77966 /* UserLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E89EAD26A1C12C00A77966 /* UserLayer.swift */; };
 		30FEA249269DD73700C939BA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 30FEA248269DD73700C939BA /* GoogleService-Info.plist */; };
 		30FEA24D269DDA9C00C939BA /* AuthLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30FEA24C269DDA9C00C939BA /* AuthLayer.swift */; };
@@ -51,7 +54,7 @@
 /* Begin PBXFileReference section */
 		1BE76EE16441A0FA927E1669 /* Pods_FirabaseAppMVP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FirabaseAppMVP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		235FA847268E020E38174255 /* Pods-FirabaseAppMVP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirabaseAppMVP.release.xcconfig"; path = "Target Support Files/Pods-FirabaseAppMVP/Pods-FirabaseAppMVP.release.xcconfig"; sourceTree = "<group>"; };
-		30170EBA26A0302C0030C997 /* RouterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterProtocol.swift; sourceTree = "<group>"; };
+		30170EBA26A0302C0030C997 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		30170EC526A090D30030C997 /* ProfileEditorPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEditorPresenter.swift; sourceTree = "<group>"; };
 		30170ECC26A096860030C997 /* ProfileEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEditorView.swift; sourceTree = "<group>"; };
 		30170ECD26A096860030C997 /* ProfileEditorView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileEditorView.xib; sourceTree = "<group>"; };
@@ -65,6 +68,9 @@
 		30977757269C55B000C9C9E5 /* FirabaseAppMVPTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FirabaseAppMVPTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		30977762269C55B000C9C9E5 /* FirabaseAppMVPUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FirabaseAppMVPUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		30977774269C5AD300C9C9E5 /* PhoneVerifyViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneVerifyViewPresenter.swift; sourceTree = "<group>"; };
+		30B2A99026A58EEE007E7C7B /* HomeViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewPresenter.swift; sourceTree = "<group>"; };
+		30B2A99426A59084007E7C7B /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		30B2A99526A59084007E7C7B /* HomeView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeView.xib; sourceTree = "<group>"; };
 		30E89EAD26A1C12C00A77966 /* UserLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLayer.swift; sourceTree = "<group>"; };
 		30FEA248269DD73700C939BA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		30FEA24C269DDA9C00C939BA /* AuthLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthLayer.swift; sourceTree = "<group>"; };
@@ -157,18 +163,53 @@
 				30977744269C55AC00C9C9E5 /* AppDelegate.swift */,
 				30977746269C55AC00C9C9E5 /* SceneDelegate.swift */,
 				3097774A269C55AC00C9C9E5 /* Main.storyboard */,
-				30170EBA26A0302C0030C997 /* RouterProtocol.swift */,
+				30170EBA26A0302C0030C997 /* Router.swift */,
 				30FEA24E269DDB1300C939BA /* Model */,
 				30FEA258269EEB9300C939BA /* Helper */,
-				30FEA262269F022E00C939BA /* CheckCodeModule */,
-				30170EC726A096330030C997 /* ProfileEditorModule */,
-				30FEA24B269DD88200C939BA /* CheckPhoneModule */,
+				30B2A98E26A58E88007E7C7B /* Moduls */,
 				3097774D269C55AF00C9C9E5 /* Assets.xcassets */,
 				3097774F269C55AF00C9C9E5 /* LaunchScreen.storyboard */,
 				30FEA248269DD73700C939BA /* GoogleService-Info.plist */,
 				30977752269C55AF00C9C9E5 /* Info.plist */,
 			);
 			path = FirabaseAppMVP;
+			sourceTree = "<group>";
+		};
+		30B2A98E26A58E88007E7C7B /* Moduls */ = {
+			isa = PBXGroup;
+			children = (
+				30B2A98F26A58EB1007E7C7B /* HomeModule */,
+				30FEA24B269DD88200C939BA /* CheckPhoneModule */,
+				30FEA262269F022E00C939BA /* CheckCodeModule */,
+				30170EC726A096330030C997 /* ProfileEditorModule */,
+			);
+			path = Moduls;
+			sourceTree = "<group>";
+		};
+		30B2A98F26A58EB1007E7C7B /* HomeModule */ = {
+			isa = PBXGroup;
+			children = (
+				30B2A99326A5906E007E7C7B /* View */,
+				30B2A99226A59069007E7C7B /* Presenter */,
+			);
+			path = HomeModule;
+			sourceTree = "<group>";
+		};
+		30B2A99226A59069007E7C7B /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				30B2A99026A58EEE007E7C7B /* HomeViewPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		30B2A99326A5906E007E7C7B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				30B2A99426A59084007E7C7B /* HomeView.swift */,
+				30B2A99526A59084007E7C7B /* HomeView.xib */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		30FEA24A269DD87100C939BA /* Presenter */ = {
@@ -389,6 +430,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				30FEA255269DE61900C939BA /* VerifyPhoneView.xib in Resources */,
+				30B2A99726A59084007E7C7B /* HomeView.xib in Resources */,
 				30977751269C55AF00C9C9E5 /* LaunchScreen.storyboard in Resources */,
 				30FEA267269F026600C939BA /* VerifyCodeView.xib in Resources */,
 				30FEA249269DD73700C939BA /* GoogleService-Info.plist in Resources */,
@@ -464,6 +506,7 @@
 				30FEA254269DE61900C939BA /* VerifyPhoneView.swift in Sources */,
 				30977745269C55AC00C9C9E5 /* AppDelegate.swift in Sources */,
 				30FEA24D269DDA9C00C939BA /* AuthLayer.swift in Sources */,
+				30B2A99126A58EEE007E7C7B /* HomeViewPresenter.swift in Sources */,
 				30170EC626A090D30030C997 /* ProfileEditorPresenter.swift in Sources */,
 				30170ECE26A096860030C997 /* ProfileEditorView.swift in Sources */,
 				30977775269C5AD300C9C9E5 /* PhoneVerifyViewPresenter.swift in Sources */,
@@ -473,8 +516,9 @@
 				30FEA266269F026600C939BA /* VerifyCodeView.swift in Sources */,
 				30FEA250269DDBD200C939BA /* User.swift in Sources */,
 				30FEA25F269EF85800C939BA /* VerifyCodePresenter.swift in Sources */,
+				30B2A99626A59084007E7C7B /* HomeView.swift in Sources */,
 				30977747269C55AC00C9C9E5 /* SceneDelegate.swift in Sources */,
-				30170EBB26A0302C0030C997 /* RouterProtocol.swift in Sources */,
+				30170EBB26A0302C0030C997 /* Router.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

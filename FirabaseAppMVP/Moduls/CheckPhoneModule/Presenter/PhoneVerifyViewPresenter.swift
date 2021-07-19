@@ -20,10 +20,6 @@ protocol PhoneVerifyViewPresenterProtocol: AnyObject {
 
 class PhoneVerifyViewPresenter: PhoneVerifyViewPresenterProtocol {
     
-
-    
-    
-    var user: User?
     var authLayer: AuthLayerProtocol!
     weak var view: VerifyPhoneViewProtocol?
     var router: RouterProtocol?

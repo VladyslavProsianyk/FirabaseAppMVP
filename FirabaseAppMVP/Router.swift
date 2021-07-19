@@ -17,6 +17,7 @@ protocol RouterProtocol: RouterMain {
     func initialViewController()
     func openVerifyCodePage(authID: String)
     func openProfileEditorPage(userData: AuthDataResult?)
+    func openHomePage()
     func popToRoot()
 }
 
@@ -25,15 +26,24 @@ class Router: RouterProtocol {
     var navigationController: UINavigationController?
     var assemblyBuilder: AssemblyBuilderProtocol?
     
+    
+    
     init(navigationController: UINavigationController, assemblyBuilder: AssemblyBuilderProtocol) {
         self.assemblyBuilder = assemblyBuilder
         self.navigationController = navigationController
     }
     
     func initialViewController() {
-        if let navigationController = navigationController {
-            guard let mainVC = assemblyBuilder?.createVerifyPhoneModule(router: self) else { return }
-            navigationController.viewControllers = [mainVC]
+        let userID = UserDefaults.standard.string(forKey: "userID")
+        
+        if let navigationController = navigationController { 
+            if userID == nil {
+                guard let mainVC = assemblyBuilder?.createVerifyPhoneModule(router: self) else { return }
+                navigationController.viewControllers = [mainVC]
+            } else {
+                guard let homeVC = assemblyBuilder?.createHomePage(router: self, id: userID!) else { return }
+                navigationController.viewControllers = [homeVC]
+            }
         }
     }
     
@@ -48,6 +58,19 @@ class Router: RouterProtocol {
         if let navigationController = navigationController {
             guard let profileEditorVC = assemblyBuilder?.createProfileEditorModule(router: self, userData: userData) else { return }
             navigationController.pushViewController(profileEditorVC, animated: true)
+        }
+    }
+    
+    func openHomePage() {
+        
+        let userID = UserDefaults.standard.string(forKey: "userID")
+        
+        if let navigationController = navigationController {
+            if userID != nil{
+                guard let homeVC = assemblyBuilder?.createHomePage(router: self, id: userID!) else { return }
+                navigationController.viewControllers = [homeVC]
+                popToRoot()
+            }
         }
     }
     

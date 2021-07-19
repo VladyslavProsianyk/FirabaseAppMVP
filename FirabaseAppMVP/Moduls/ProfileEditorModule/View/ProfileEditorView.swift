@@ -70,8 +70,9 @@ extension ProfileEditorView: UIImagePickerControllerDelegate, UINavigationContro
 }
 
 extension ProfileEditorView: ProfileEditorViewProtocol {
-    func saveOnSecces(documentID: String) {
-        self.present((self.alert?.createMessageAlert(with: documentID))!, animated: true)
+    
+    func saveOnSecces() {
+        presenter?.openHomePage()
     }
     
     func saveOnFailure(error: Error) {

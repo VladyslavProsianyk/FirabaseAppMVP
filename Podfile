@@ -10,5 +10,6 @@ target 'FirabaseAppMVP' do
 pod 'Firebase'
 pod 'Firebase/Auth'
 pod 'Firebase/Firestore'
+pod 'Firebase/Storage'
 
 end
